@@ -9,16 +9,37 @@
 <body>
     <h1>Projeto web</h1>
     <h2>Infinity Code</h2>
+     <!-- criar conta -->
+    <div class="criar-conta">
+        <!-- criando conta -->
+        <h2>
+            Criar Conta
+        </h2>
+        <input type="text"id="novoUsuario" placeholder="Novo usuário">
+        <input type="password" id="novaSenha" placeholder="Nova senha">
+        <button onclick="criarConta()">
+            Criar Conta
+        </button>
+     </div>
      <!-- login do usuário -->
      <div class="login">
          <h2>Login</h2>
          <input type="text" id="usuario" placeholder="Usuário">
          <input type="password" id="senha" placeholder="Senha">
-         
-         <button onclick="fazerLogin()">
+         <button onclick="login()">
              Entrar
             </button>
-            <script src="script.js"></script>
+            <script src="codigo.js"></script>
+            <!-- criação do formulário -->
+    <div class="formulario">
+        <h2>Contato</h2>
+        <input type="text" id="nome" placeholder="Nome">
+
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="formulario()">
+            Enviar
+        </button>
     </div>
+</div>
 </body>
 </html>
