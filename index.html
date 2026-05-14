@@ -12,9 +12,9 @@
      <!-- criar conta -->
     <div class="criar-conta">
         <!-- criando conta -->
-        <h2>
+        <h3>
             Criar Conta
-        </h2>
+        </h3>
         <input type="text"id="novoUsuario" placeholder="Novo usuário">
         <input type="password" id="novaSenha" placeholder="Nova senha">
         <button onclick="criarConta()">
@@ -23,23 +23,36 @@
      </div>
      <!-- login do usuário -->
      <div class="login">
-         <h2>Login</h2>
+         <h3>Login</h3>
          <input type="text" id="usuario" placeholder="Usuário">
          <input type="password" id="senha" placeholder="Senha">
          <button onclick="login()">
              Entrar
             </button>
-            <script src="codigo.js"></script>
             <!-- criação do formulário -->
-    <div class="formulario">
-        <h2>Contato</h2>
-        <input type="text" id="nome" placeholder="Nome">
-
-        <input type="email" id="email" placeholder="Email">
-        <button onclick="formulario()">
-            Enviar
-        </button>
-    </div>
-</div>
+            <div class="formulario">
+                <h3>Contato</h3>
+                <input type="text" id="nome" placeholder="Nome">
+                
+                <input type="email" id="email" placeholder="Email">
+                <button onclick="formulario()">
+                    Enviar
+                </button>
+            </div>
+            <!-- slideshow -->
+            <div>
+                <img id="slide" src="imagem futurista1.webp" alt="">
+                
+            </div>
+            
+            <button onclick="slideshow()">
+                Trocar imagem
+            </button>
+            <!-- evento DOM -->
+            <h3>clique no botão</h3>
+            <button id="botaoDOM">clique aqui</button>
+            <p id="evento"></p>
+        </div>
+        <script src="codigo.js"></script>
 </body>
 </html>
