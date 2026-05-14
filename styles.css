@@ -1,5 +1,15 @@
+h1{
+    color:blueviolet
+}
+h2{
+    color: #00ff99;
+}
+h3{
+    color: #d1d5db;
+}
 body{
- font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #121212;
+ font-family: orbitron, sans-serif;
  text-align: center;
  margin-top: 20px;
 }
@@ -8,4 +18,33 @@ input{
  margin: 10px;
  border-radius: 5px;
  border: 1px solid #0b0b0b;
+}
+p{
+    color: #d1d5db;
+}
+img{
+    width: 40%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px #00ff99;
+}
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00ff99;
+    color: #121212;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #00cc7a;
+}
+.criar-conta, .login, .formulario, .slide, .evento-dom {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
 }

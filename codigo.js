@@ -30,7 +30,7 @@ function login() {
     alert("Login realizado");
   }
  else {
-  alert("Usuário incorreto");
+  alert("Usuário não encontrado");
  }
 }
 // formulario
@@ -65,8 +65,11 @@ document.getElementById("botaoDOM");
 botao.addEventListener(
  "click",
     function() {
- document.getElementById("evento").innerHTML ="voce clicou no botão";
-    }
+ document.getElementById("evento").innerHTML ="você clicou no botão";
+    setTimeout(function() {
+        document.getElementById("evento").innerHTML = "";
+    }, 1000);
+}
 );
 // prompt de boas vindas
 let nomeUsuario = prompt("Digite seu nome");
