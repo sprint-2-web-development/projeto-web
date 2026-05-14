@@ -9,7 +9,7 @@ function criarConta() {
  senhaArmazenada = document.getElementById("novaSenha").value;
 
  if(usuarioArmazenado == "" || senhaArmazenada == "") {
-  alert("Preencha tudo");
+  alert("Preencha os campos para criar a conta");
  }
  else {
   alert("Conta criada");
@@ -21,7 +21,12 @@ function login() {
  let usuario = document.getElementById("usuario").value;
  let senha = document.getElementById("senha").value;
 
- if(usuario == usuarioArmazenado && senha == senhaArmazenada) {
+ if(usuario == "" || senha == "") {
+    alert("Preencha todos os campos de login");
+
+ }
+
+ else if(usuario == usuarioArmazenado && senha == senhaArmazenada) {
     alert("Login realizado");
   }
  else {
@@ -34,8 +39,35 @@ function formulario() {
     let email = document.getElementById("email").value;
 
     if(nome == "" || email == "") {
-        alert("Preencha todos os campos");
+        alert("Preencha todos os campos do formulário");
     } else {
         alert("Formulário enviado");
     }
 }
+// slideshow
+ let imagens = [
+    "imagem futurista1.webp",
+    "slide2.webp",
+    "slide3.webp"
+];
+ let indice = 0;
+ function slideshow() {
+    indice++;
+    if(indice>= imagens.length) {
+        indice = 0;
+    }
+    document.getElementById("slide").src = imagens[indice];
+};
+// evento DOM
+let botao =
+document.getElementById("botaoDOM");
+
+botao.addEventListener(
+ "click",
+    function() {
+ document.getElementById("evento").innerHTML ="voce clicou no botão";
+    }
+);
+// prompt de boas vindas
+let nomeUsuario = prompt("Digite seu nome");
+alert("Bem vindo ao site " + nomeUsuario);
