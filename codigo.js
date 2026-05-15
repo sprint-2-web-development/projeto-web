@@ -46,7 +46,7 @@ function formulario() {
 }
 // slideshow
  let imagens = [
-    "imagem futurista1.webp",
+    "slide1.webp",
     "slide2.webp",
     "slide3.webp"
 ];
